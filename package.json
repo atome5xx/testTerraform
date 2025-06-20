@@ -1,12 +1,11 @@
 {
-    "name": "hello-app",
+    "name": "your-app-name",
     "version": "1.0.0",
-    "description": "Simple Azure Hello World app",
     "main": "server.js",
     "scripts": {
         "start": "node server.js"
     },
     "dependencies": {
-        "express": "^4.18.2"
+        "express": "^4.18.0"
     }
 }

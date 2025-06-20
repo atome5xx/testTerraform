@@ -1,9 +1,11 @@
 const express = require('express');
 const app = express();
 
-app.get('/', (req, res) => res.send('Hello from Azure!'));
+app.get('/', (req, res) => {
+    res.send('App déployée avec succès !');
+});
 
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Serveur lancé sur le port ${PORT}`);
 });
